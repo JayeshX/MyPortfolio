@@ -1,45 +1,24 @@
-<script setup>
-import { ref } from 'vue';
-const projects = ref([
-  {
-    cname: 'Stoffspot',
-    jtitle: 'Junior. Full Stack Developer',
-    dt: 'May. 2023 - Dec. 2023',
-    desc: ["Developed a website on Next.js with Node, and a professional Git/GitHub workflow."," Improved website performance and speed through optimization techniques."],
-  },
-
-]);
-</script>
-
 <template>
-    <div class=" bg-[#fbfcf8] p-8  dark:bg-[#121212]">
-        <h2 class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl dark:text-[#fbfcf8] ">
-        My Experience
-      </h2>
-      <div class="flex flex-wrap mt-12 dark:bg-[#121212] ">
-        <div class="bg-white rounded-md shadow-xl mb-4 px-4 py-3 dark:bg-[#303030]" v-for="(project, index) in projects" :key="index">
-            <h3 class="text-grey-600 dark:text-white">{{ project.cname }}</h3>
-          <p class="job-title">{{ project.jtitle }}</p>
-          <p class="date">{{ project.dt }}</p>
-          <ul >
-                <!-- Iterate over the techUsed array and display each tech item as a list item -->
-                <li v-for="(tech, techIndex) in project.desc" :key="techIndex">{{ tech }}</li>
-            </ul>
-        </div>
-        <!-- <div class="experience-item">
-          <h3>Company XYZ</h3>
-          <p class="job-title">Web Developer</p>
-          <p class="date">June 2020 - Present</p>
-          <ul>
-            <li></li>
-            <li>Collaborated with cross-functional teams for project success.</li>
-            <li>Implemented new features and optimized existing codebase.</li>
-          </ul>
-        </div> -->
+  <div class="bg-[#fbfcf8] dark:bg-[#121212] p-8 ">
+    <h1 class="mt=5 mb=5 font-serif text-center text-3xl"> My Experience </h1>
+    <ol class="relative border-s border-gray-200 my-16 dark:border-gray-700">
+      <li class="mb-10 ms-6">
+        <span
+          class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-700 dark:bg-[#cb1b28]">
+          <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+          </svg>
+        </span>
+        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"> StoffSpot PVT LTD <span
+            class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-[#cb1b28] dark:text-white ms-3">Latest</span>
+        </h3>
+        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">MAY 2023-DEC-2023</time>
+        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Developed a website on Next.js with Node, and a professional Git/GitHub workflow.</p>
+        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Improved website performance and speed through optimization techniques.</p>
         
-        <!-- Add more experience items as needed -->
-        
-      </div>
-    </div>
-  </template>
-  
+      </li>
+    </ol>
+  </div>
+</template>

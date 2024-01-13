@@ -14,6 +14,7 @@
 import {RouterView} from 'vue-router'
 import NavBar from './components/Navbar/NavBar.vue';
 import FootComponent from './components/Footer/FootComponent.vue';
+
 </script>
 
 <style>

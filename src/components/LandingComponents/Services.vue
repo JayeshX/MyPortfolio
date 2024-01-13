@@ -6,22 +6,24 @@
     Here's what I'm good at
   </h2>
   <h3 class="pt-6 text-center font-header text-xl font-medium text-black dark:text-gray-200 sm:text-2xl lg:text-3xl">
-    Things I am familiar with
+    The Services I can Provide
   </h3>
 
   <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3 ">
     <!-- web-development -->
-    <div class="group rounded px-8 py-12 bg-[#f5fbff] dark:bg-[#303030] shadow-xl dark:shadow-gray-800 hover:bg-[#5844ac] dark:hover:bg-[#5844ac]">
+    <div class="group rounded px-8 py-12 bg-[#f5fbff] dark:bg-[#1e1e1e] shadow-xl dark:shadow-[#cb1b28] hover:bg-[#5844ac] dark:hover:bg-[#cb1b28]">
       <div class="mx-auto flex items-center justify-center h-24 w-24 text-center xl:h-28 xl:w-28">
         <div class="hidden group-hover:block">
-          <img src="../../assets/images/web-development.png" alt="development icon">
+          <img v-if="isDark" src="../../assets/services/wd-white.svg" alt="development icon">
+          <img v-else src="../../assets/services/wd-white.svg" alt="development icon">
         </div>
         <div class="block group-hover:hidden">
-          <img src="../../assets/images/web-development.png" alt="development icon">
+          <img v-if="isDark" src="../../assets/services/wd-red.svg" alt="development icon">
+          <img v-else src="../../assets/services/wd-black.svg" alt="development icon">
         </div>
       </div>
       <div class="text-center">
-        <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-[#FFFF00] lg:text-xl">
+        <h3 class="pt-8 text-lg font-semibold uppercase underline text-primary group-hover:text-[#FFFF00] lg:text-xl">
           WEB DEVELOPMENT
         </h3>
         <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
@@ -30,17 +32,19 @@
       </div>
     </div>
     <!-- mobile development -->
-    <div class="group rounded px-8 py-12 bg-[#f5fbff] dark:bg-[#303030] shadow-xl dark:shadow-gray-800 hover:bg-[#5844ac] dark:hover:bg-[#5844ac]">
+    <div class="group rounded px-8 py-12 bg-[#f5fbff] dark:bg-[#1e1e1e] shadow-xl dark:shadow-[#cb1b28] hover:bg-[#5844ac] dark:hover:bg-[#cb1b28]">
       <div class="mx-auto flex items-center justify-center h-24 w-24 text-center xl:h-28 xl:w-28">
         <div class="hidden group-hover:block">
-          <img src="../../assets/images/mobile.png" alt="Mobile Application icon">
+          <img v-if="isDark" src="../../assets/services/md-white.svg" alt="development icon">
+          <img v-else src="../../assets/services/md-white.svg" alt="development icon">
         </div>
         <div class="block group-hover:hidden">
-          <img src="../../assets/images/mobile.png" alt="Mobile Application icon">
+          <img v-if="isDark" src="../../assets/services/md-red.svg" alt="development icon">
+          <img v-else src="../../assets/services/md-black.svg" alt="development icon">
         </div>
       </div>
       <div class="text-center">
-        <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-[#FFFF00] lg:text-xl">
+        <h3 class="pt-8 text-lg font-semibold uppercase underline text-primary group-hover:text-[#FFFF00] lg:text-xl">
           Mobile Applications Development
         </h3>
         <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
@@ -49,17 +53,19 @@
       </div>
     </div>
     <!-- cross-platform -->
-    <div class="group rounded px-8 py-12 bg-[#f5fbff] dark:bg-[#303030] shadow-xl dark:shadow-gray-800 hover:bg-[#5844ac] dark:hover:bg-[#5844ac]">
+    <div class="group rounded px-8 py-12 bg-[#f5fbff] dark:bg-[#1e1e1e] shadow-xl dark:shadow-[#cb1b28] hover:bg-[#5844ac] dark:hover:bg-[#cb1b28]">
       <div class="mx-auto flex items-center justify-center h-24 w-24 text-center xl:h-28 xl:w-28">
         <div class="hidden group-hover:block ">
-          <img src="../../assets/images/production.png" alt="content marketing icon">
+          <img v-if="isDark" src="../../assets/services/cp-white.svg" alt="development icon">
+          <img v-else src="../../assets/services/cp-white.svg" alt="development icon">
         </div>
         <div class="block group-hover:hidden">
-          <img src="../../assets/images/production.png" alt="content marketing icon">
+          <img v-if="isDark" src="../../assets/services/cp-red.svg" alt="development icon">
+          <img v-else src="../../assets/services/cp-black.svg" alt="development icon">
         </div>
       </div>
       <div class="text-center">
-        <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-[#FFFF00] lg:text-xl">
+        <h3 class="pt-8 text-lg font-semibold uppercase underline text-primary group-hover:text-[#FFFF00] lg:text-xl">
           Cross-Platform
         </h3>
         <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
@@ -68,13 +74,15 @@
       </div>
     </div>
     <!-- data handling -->
-    <div class="group rounded px-8 py-12 bg-[#f5fbff] dark:bg-[#303030] shadow-xl dark:shadow-gray-800 hover:bg-[#5844ac] dark:hover:bg-[#5844ac]">
+    <div class="group rounded px-8 py-12 bg-[#f5fbff] dark:bg-[#1e1e1e] shadow-xl dark:shadow-[#cb1b28] hover:bg-[#5844ac] dark:hover:bg-[#cb1b28]">
       <div class="mx-auto flex items-center justify-center h-24 w-24 text-center xl:h-28 xl:w-28">
         <div class="hidden group-hover:block">
-          <img src="../../assets/images/configuration.png" alt="Email Marketing icon">
+          <img v-if="isDark" src="../../assets/services/dh-white.svg" alt="development icon">
+          <img v-else src="../../assets/services/dh-white.svg" alt="development icon">
         </div>
         <div class="block group-hover:hidden">
-          <img src="../../assets/images/configuration.png" alt="Email Marketing icon">
+          <img v-if="isDark" src="../../assets/services/dh-red.svg" alt="development icon">
+          <img v-else src="../../assets/services/dh-black.svg" alt="development icon">
         </div>
       </div>
       <div class="text-center">
@@ -87,13 +95,15 @@
       </div>
     </div>
     <!-- machine-learning -->
-    <div class="group rounded px-8 py-12 bg-[#f5fbff] dark:bg-[#303030] shadow-xl dark:shadow-gray-800 hover:bg-[#5844ac] dark:hover:bg-[#5844ac]">
+    <div class="group rounded px-8 py-12 bg-[#f5fbff] dark:bg-[#1e1e1e] shadow-xl dark:shadow-[#cb1b28] hover:bg-[#5844ac] dark:hover:bg-[#cb1b28]">
       <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
         <div class="hidden group-hover:block">
-          <img src="../../assets/images/machine-learning.png" alt="Theme Design icon">
+          <img v-if="isDark" src="../../assets/services/ml-white.svg" alt="development icon">
+          <img v-else src="../../assets/services/ml-white.svg" alt="development icon">
         </div>
         <div class="block group-hover:hidden">
-          <img src="../../assets/images/machine-learning.png" alt="Theme Design icon">
+          <img v-if="isDark" src="../../assets/services/ml-red.svg" alt="development icon">
+          <img v-else src="../../assets/services/ml-black.svg" alt="development icon">
         </div>
       </div>
       <div class="text-center">
@@ -110,3 +120,9 @@
 </div>
 </div>
 </template>
+<script setup>
+import { useDark } from '@vueuse/core'
+
+const isDark = useDark();
+
+</script>

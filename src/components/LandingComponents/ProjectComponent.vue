@@ -48,13 +48,16 @@ const tools = ref([
 
 </script>
 <template>
-  <div class="max-w-7xl mx-auto my-8 px-2" id="project-me">
-    
+  <div class="max-w-7xl mx-auto  px-2 bg-[#f8eeec] dark:bg-[#151515] " id="project-me">
+    <hr class=" border-b-2 border-gray-800 dark:border-[#cb1b28]  w-17 mx-auto">
+      <br>
     <div class="flex justify-center text-2xl md:text-3xl font-bold mb-4 dark:text-white">
         MY PROJECTS
+        
     </div>
+    <hr class="my-2 border-b-2 border-gray-600 w-16 mx-auto">
 
-    <ul class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 p-2 xl:p-5">
+    <ul class="grid gap-8  md:grid-cols-2 lg:grid-cols-3 p-2 xl:p-5">
       <li v-for="(tool, index) in tools" :key="index">
         <ProjectComp
           :glink="tool.glink"
@@ -63,6 +66,7 @@ const tools = ref([
           :desc="tool.desc"
           :ilink="tool.ilink"
           :techUsed="tool.techUsed"
+          class=""
         />
       </li>
     </ul>

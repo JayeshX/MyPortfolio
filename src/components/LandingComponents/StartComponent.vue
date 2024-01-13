@@ -14,7 +14,7 @@ import SocialContainer from '../Containers/SocialContainer.vue';
                 JAYESH KIRTANE
             </h2>
             <!-- White Line -->
-            <div class="bg-black h-2 w-16 my-2 rounded-full dark:bg-white"></div>
+            <div class="bg-black h-2 w-16 my-2 rounded-full dark:bg-[white]"></div>
             <!-- Designation -->
             <p class="xl:text-2xl text-center text-gray-600 dark:text-gray-400 text-sm">
                 FULLSTACK Developer

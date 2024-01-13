@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-blue-50 dark:bg-[#5844ac]" id="contact-me">
+    <section class="bg-blue-50 dark:bg-[#151515]" id="contact-me">
     <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div class="mb-4">
             <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
@@ -10,7 +10,7 @@
                     class="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
                     Get in Touch
                 </h2>
-                <p class="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-white"> I will get back to you as soon as I can
+                <p class="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-[#cb1b28] "> I will get back to you as soon as I can
                 </p>
             </div>
         </div>
@@ -23,7 +23,7 @@
                     </p>
                     <ul class="mb-6 md:mb-0">
                         <li class="flex">
-                            <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                            <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 dark:bg-[#cb1b28] text-gray-50">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="h-6 w-6">
@@ -41,7 +41,7 @@
                             </div>
                         </li>
                         <li class="flex">
-                            <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                            <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 dark:bg-[#cb1b28] text-gray-50">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="h-6 w-6">
@@ -59,7 +59,7 @@
                             </div>
                         </li>
                         <li class="flex">
-                            <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                            <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 dark:bg-[#cb1b28] text-gray-50">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="h-6 w-6">
@@ -93,7 +93,7 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                            <button type="submit" class="w-full bg-blue-800 text-white px-6 py-3 font-xl dark:bg-[#cb1b28] rounded-md sm:mb-0">Send Message</button>
                         </div>
                     </form>
                 </div>

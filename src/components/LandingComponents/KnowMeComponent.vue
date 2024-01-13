@@ -1,5 +1,5 @@
 <template>
-    <div id="know-me" class="bg-[#fbfcf8] dark:bg-[#121212] py-16">
+    <div id="know-me" class="bg-[#fbfcf8] dark:bg-[#151515] py-16">
       <!-- Content Container -->
       <div class="container mx-auto px-8 flex flex-col lg:flex-row items-center lg:justify-between">
         <div class="lg:w-1/2 lg:mr-8">
@@ -16,7 +16,7 @@
           <img
             src="../../assets/images/profile.jpeg"
             alt="Your Photo"
-            class="w-full h-auto rounded-lg"
+            class="w-full h-auto rounded-lg "
           />
         </div>
       </div>

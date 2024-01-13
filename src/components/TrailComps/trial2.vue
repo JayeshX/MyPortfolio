@@ -1,64 +1,50 @@
 <template>
-  <div :class="'relative bg-white flex flex-col justify-between border rounded shadow-md hover:shadow-primary-400'">
-    <a :href="glink" target="_blank" class="relative">
-      <div class="relative w-full aspect-video">
-        <img :src="ilink" alt="Writey A.I" loading="lazy" class="rounded w-full h-full object-cover" />
-        <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-b from-gray-800 to-gray-500 text-white">
-          <h2 class="text-xl font-semibold">{{ pname }}</h2>
-          <p class="font-medium text-sm">{{ subtitle }}</p>
-        </div>
-      </div>
-    </a>
-
-    <div class="flex flex-col justify-between gap-3 px-4 py-2">
-      <p class="text-gray-600 two-lines">{{ desc }}</p>
-
-      <ul class="flex flex-wrap items-center justify-start text-sm gap-2">
-        <li
-          title="Pricing type"
-          class="flex items-center cursor-pointer gap-0.5 bg-gray-100 text-black px-2 py-0.5 rounded-full"
-        >
-          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-            <!-- Your SVG path here -->
+  <div>
+    <ul class="flex justify-center mt-5 space-x-5">
+      <li>
+        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+          <!-- LinkedIn -->
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <!-- Replace this with the actual LinkedIn SVG code -->
+            <!-- You can find SVG icons at https://heroicons.com/ or other sources -->
+            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd"></path>
           </svg>
-          <span>Freemium</span>
-        </li>
-      </ul>
-
-      <ul class="flex flex-wrap text-sm gap-2 my-1">
-        <li v-for="tech in techUsed" :key="tech" class="flex items-center gap-2"><span>{{ tech }}</span></li>
-      </ul>
-    </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+          <!-- GitHub -->
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <!-- Replace this with the actual GitHub SVG code -->
+            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+          <!-- Instagram -->
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <!-- Replace this with the actual Instagram SVG code -->
+            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
+          <!-- Facebook -->
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
 </template>
-
-<script>
-export default {
-  props: {
-    glink: {
-      type: String,
-      required: true,
-    },
-    ilink: {
-      type: String,
-      required: true,
-    },
-    pname: {
-      type: String,
-      required: true,
-    },
-    subtitle: {
-      type: String,
-      required: true,
-    },
-    desc: {
-      type: String,
-      required: true,
-    },
-    techUsed: {
-      type: Array,
-      default: () => [],
-    },
-  },
-};
-</script>

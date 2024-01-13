@@ -5,7 +5,7 @@
 import StartComponent from '../components/LandingComponents/StartComponent.vue';
 import Knowmecomponent from '../components/landingcomponents/knowmecomponent.vue';
 import SkillCompnent from '../components/LandingComponents/SkillComponent.vue';
-import SkillTabs from '../components/LandingComponents/SkillTabs.vue';
+import Services from '../components/LandingComponents/Services.vue';
 // import ProjectComponents from '../components/LandingComponents/ProjectComponents.vue';
 import Projects from '../components/LandingComponents/ProjectComponent.vue'
 import Trial1 from '../components/TrailComps/trial1.vue';
@@ -17,11 +17,12 @@ import ExperienceComponent from '../components/LandingComponents/ExperienceCompo
 <template>
   <div>
   <StartComponent/>
+  <!-- <Trial1/> -->
   <Knowmecomponent/>
   <SkillCompnent/>
-  <SkillTabs/>
+  <Services/>
   <Projects/>
-  <!-- <Trial1/> -->
+  
   <!-- <TestimonialComponent/> -->
   <ExperienceComponent/>
   <ContactMeComponent/>
